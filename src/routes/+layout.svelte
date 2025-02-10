@@ -1,9 +1,13 @@
 <script lang="ts">
-	import { i18n } from '$lib/i18n';
-	import { ParaglideJS } from '@inlang/paraglide-sveltekit';
-	let { children } = $props();
+    import '$lib/main.scss';
+
+    let { children } = $props();
 </script>
 
-<ParaglideJS {i18n}>
-	{@render children()}
-</ParaglideJS>
+<nav>
+    <a href="/">home</a>
+</nav>
+
+<main>
+    {@render children()}
+</main>
