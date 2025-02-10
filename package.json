@@ -9,6 +9,6 @@
     "core-js"
   ],
   "scripts": {
-    "build": "pug -O options.json src/index.pug src/blog/*.pug -o dist -D"
+    "build": "pug -O options.json src/index.pug src/blog/*.pug -o ./ -D"
   }
 }
