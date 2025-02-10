@@ -1,0 +1,9 @@
+extends layout.pug
+
+block content 
+    h1 blogs
+    ul
+        each blog in blogs
+            li
+                time(datetime=blog.date)= blog.date + ' - '
+                a(href=blog.path)= blog.name
